@@ -1,6 +1,7 @@
 package com.example.mentalcare;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
                 goToPrepActivity();
             }
         });
+
+        Button play = (Button) findViewById(R.id.playMusic);
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer music = MediaPlayer.create(MainActivity.this, R.raw.music);
+                music.start();
+            }
+        });
+
     }
     private void goToPrepActivity() {
         Intent intent = new Intent(this, PrepActivity.class);
