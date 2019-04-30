@@ -1,6 +1,7 @@
 package com.example.mentalcare;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -18,12 +19,12 @@ public class RatingActivity extends AppCompatActivity {
 
     public static int finalScore = 0;
 
+
     @Override
     protected void onCreate(Bundle savedInsatnceState) {
         super.onCreate(savedInsatnceState);
         setContentView(R.layout.statement1);
         changeStatements();
-
     }
 
     private void changeStatements() {

@@ -12,6 +12,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MentalCare:Home";
 
+    private static MediaPlayer music;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MediaPlayer music = MediaPlayer.create(MainActivity.this, R.raw.music);
+                music = MediaPlayer.create(MainActivity.this, R.raw.music);
                 music.start();
             }
         });

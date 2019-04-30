@@ -27,7 +27,7 @@ public class ResultingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 System.out.print(RatingActivity.finalScore);
-                if (RatingActivity.finalScore < 53) {
+                if (RatingActivity.finalScore < 42) {
                     setContentView(R.layout.intepretation1);
                     Button startOver = (Button)findViewById(R.id.startOver);
                     startOver.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +37,7 @@ public class ResultingActivity extends AppCompatActivity {
                             startAgain();
                         }
                      });
-                } else if (RatingActivity.finalScore <= 62) {
+                } else if (RatingActivity.finalScore <= 50) {
                     setContentView(R.layout.intepretation2);
                     Button startOver = (Button)findViewById(R.id.startOver);
                     startOver.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +47,7 @@ public class ResultingActivity extends AppCompatActivity {
                             startAgain();
                         }
                     });
-                } else if (RatingActivity.finalScore <= 72) {
+                } else if (RatingActivity.finalScore <= 58) {
                     setContentView(R.layout.intepretation3);
                     Button startOver = (Button)findViewById(R.id.startOver);
                     startOver.setOnClickListener(new View.OnClickListener() {
