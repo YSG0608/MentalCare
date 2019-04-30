@@ -26,7 +26,6 @@ public class ResultingActivity extends AppCompatActivity {
         checkResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.print(RatingActivity.finalScore);
                 if (RatingActivity.finalScore < 42) {
                     setContentView(R.layout.intepretation1);
                     Button startOver = (Button)findViewById(R.id.startOver);
