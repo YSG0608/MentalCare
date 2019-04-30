@@ -25,6 +25,16 @@ public class RatingActivity extends AppCompatActivity {
         super.onCreate(savedInsatnceState);
         setContentView(R.layout.statement1);
         changeStatements();
+
+        Button exit = (Button) findViewById(R.id.toExit);
+
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finalScore  = 0;
+                goToMainActivity();
+            }
+        });
     }
 
     private void changeStatements() {
@@ -106,6 +116,12 @@ public class RatingActivity extends AppCompatActivity {
     private void goToResultingActivity() {
         Intent resultingIntent = new Intent(this, ResultingActivity.class);
         startActivity(resultingIntent);
+        finish();
+    }
+
+    private void goToMainActivity() {
+        Intent mainIntent = new Intent(this, MainActivity.class);
+        startActivity(mainIntent);
         finish();
     }
 }

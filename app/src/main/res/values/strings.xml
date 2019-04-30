@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mental Care</string>
+    <string name="mental_care">Mental Care</string>
+    <string name="start">Start</string>
+    <string name="your_current_mental_state_might_be">Your current mental state might be...</string>
+    <string name="severe_depression">Severe depression</string>
+    <string name="please_visit_a_psychological_clinic_or_a_counseling_center_as_soon_as_possible">Please visit a psychological clinic or a counseling center as soon as possible.</string>
+    <string name="rate_myself_again">Rate myself again</string>
+</resources>
